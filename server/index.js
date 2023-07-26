@@ -36,8 +36,8 @@ app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
 
-/* MONGOOSE SETUP */
-const PORT = process.env.PORT || 9000;
+/* MONGOOSE SETUP     const PORT = process.env.PORT || 9000; */
+const PORT = 5001;
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
